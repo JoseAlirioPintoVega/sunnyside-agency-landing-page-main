@@ -17,6 +17,11 @@
 }
 html{
     scroll-behavior: smooth;
+
+}
+body{
+    max-width: 1200px;
+    margin: auto;
 }
 .img_desktop{
     display: none;
@@ -224,19 +229,23 @@ a{
     .icon-menu{
         display: none;
     }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
     .menu{
         display: flex;
         gap: 3rem;
-    
+        top: 5px;
+        right: 0;
         background-color: #3dbeff;
-        position: static;
+        position: absolute;
         height: auto;
-        width: auto;
+        /* width: auto; */
         flex-direction: row;
-        place-content: center;
-        align-items: center;
+        
         transform: translateX(0);
     
-        transition: transform 1s;
     }
 }
